@@ -1,0 +1,8 @@
+{
+  "name": "Wallet",
+  "app_id": "816cc808",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
