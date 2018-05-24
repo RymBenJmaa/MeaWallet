@@ -1,0 +1,40 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+<!--
+  <ion-navbar>
+    <ion-title >Login</ion-title>
+  </ion-navbar>
+-->
+</ion-header>
+
+
+<ion-content padding  class="parent2 bdan">
+<div class="child2">
+ <img src="assets/imgs/login.png" height="150" width="125" alt=" login image "class="center2">
+  <label for="name" class="col-lg-2 control-label label2" style="color: #FFFFFF; font-family: cursive;">Email</label>
+  <input id="email" type="text"  placeholder="Email"  [(ngModel)]="user.email">
+
+  <label for="name" class="col-lg-2 control-label label2" style="color: #FFFFFF; font-family: cursive;">Login</label>
+  <input id="login" type="text"  placeholder="Login"  [(ngModel)]="user.login">
+
+  <label for="name" class="col-lg-2 control-label label2" style="color: #FFFFFF; font-family: cursive;">Password</label>
+  <input id="pwd" type="password"  placeholder="Password"  [(ngModel)]="user.password">
+
+  <label for="name" class="col-lg-2 control-label label2" style="color: #FFFFFF; font-family: cursive;">Ethereum wallet address</label>
+  <input id="wallet" type="text"  placeholder="Ethereum wallet address"  [(ngModel)]="user.address">
+
+  <button id="signup" class="button2" (tap)="signUpfct()">Sign Up</button>
+   
+</div>
+
+</ion-content>
+<!--<ion-footer  >
+
+    <label   style= "color:#303030; font-family: cursive;" > Don't have an account? <a id="signup" class="signup" href="#">Create one now!</a></label> 
+ 
+</ion-footer>-->

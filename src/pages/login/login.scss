@@ -1,0 +1,84 @@
+page-login{
+.content2 {
+    background:  linear-gradient(to bottom right,  #b721ff,#21d4fd);
+   //background: radial-gradient(   #21d4fd 0%,#b721ff 80%);
+}
+
+
+.parent {
+    position: relative;
+  
+  }
+  .child {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-20%, -20%);
+  }
+
+ input {
+    font-family: cursive;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+ button {
+  font-family: cursive;
+  position: absolute;
+  margin-left: 25%;
+  margin-right: 20%;  
+   border-radius: 25px;
+    
+  color: #FFFFFF;
+ // background: radial-gradient(   #21d4fd 0%,#b721ff 50%);
+ background:  linear-gradient(to left,#b721ff, #21d4fd);
+
+  
+}
+ion-title{
+    text-align: center;
+    font-family: cursive;
+    color:  linear-gradient(to left, #21d4fd, #b721ff);
+}
+img {
+    border-radius: 50%;
+}
+.bot {
+    text-align: center;
+    font-family: cursive;
+    position: absolute;
+    bottom: 0;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.signup{
+    background: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.signup:hover, .signup:active, .signup:focus {
+    background: transparent;
+    color: #b721ff;
+  }
+button:hover, button:active, button:focus {
+  background: #21d4fd;
+}
+
+label{
+    color: #FFFFFF;
+}
+ion-footer {
+    background: transparent;
+    text-align: center;
+}
+}

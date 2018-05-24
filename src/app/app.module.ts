@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -6,25 +7,37 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-
+import { LoginPage } from '../pages/login/login';
+import { SignUpPage } from '../pages/signup/signup';
+import { UserService } from '../services/user.service';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
+    
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    SignUpPage,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    SignUpPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    UserService,
+    HttpClientModule,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
+
   ]
 })
 export class AppModule {}

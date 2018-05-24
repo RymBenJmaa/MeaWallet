@@ -1,0 +1,72 @@
+page-signup{
+.bdan {
+    background:  linear-gradient(to bottom right, #21d4fd, #b721ff);
+   //background: radial-gradient(   #21d4fd 0%,#b721ff 80%);
+}
+
+
+.parent2 {
+    position: relative;
+  
+  }
+  .child2 {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-20%, -20%);
+  }
+
+ input{
+    font-family: cursive;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.button2{
+  font-family: cursive;
+  position: absolute;
+  margin-left: 30%;
+  margin-right: 20%;  
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 40px;
+  padding-left: 40px;
+   border-radius: 25px;
+   background: #21d4fd; 
+  color: #FFFFFF;
+ // background: radial-gradient(   #21d4fd 0%,#b721ff 50%);
+// background:  linear-gradient(to left,#b721ff, #21d4fd);
+
+  
+}
+ion-title{
+    text-align: center;
+    font-family: cursive;
+    color:  linear-gradient(to left, #b721ff,#21d4fd);
+}
+img {
+    border-radius: 50%;
+}
+.bot2 {
+    text-align: center;
+    font-family: cursive;
+    position: absolute;
+    bottom: 0;
+}
+.center2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.button2:hover, .button2:active, .button2:focus {
+  background: #b721ff;
+}
+
+}

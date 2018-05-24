@@ -1,0 +1,35 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+<!--
+  <ion-navbar>
+    <ion-title >Login</ion-title>
+  </ion-navbar>
+-->
+</ion-header>
+
+
+<ion-content padding  class="parent content2">
+<div class="child">
+ <img src="assets/imgs/login.png" height="150" width="125" alt=" login image "class="center">
+
+  <label for="name" class="col-lg-2 control-label label" style="color: #FFFFFF; font-family: cursive;">Login</label>
+  <input id="login" type="text"  placeholder="login" [(ngModel)]="user.login">
+
+  <label for="name" class="col-lg-2 control-label label" style="color: #FFFFFF; font-family: cursive;">Password</label>
+  <input id="pwd" type="password"  placeholder="password" [(ngModel)]="user.password">
+
+  <button id="login" (tap)="login()">Login</button>
+  <label   style= "color:#303030; font-family: cursive;margin-top: 35%;margin-left: 20%" > Don't have an account? <a id="signup" class="signup" (tap)="signup()">Create one now!</a></label> 
+</div>
+
+</ion-content>
+<!--<ion-footer  >
+
+    <label   style= "color:#303030; font-family: cursive;" > Don't have an account? <a id="signup" class="signup" href="#">Create one now!</a></label> 
+ 
+</ion-footer>-->
