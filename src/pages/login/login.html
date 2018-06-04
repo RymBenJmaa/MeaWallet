@@ -15,16 +15,18 @@
 
 <ion-content padding  class="parent content2">
 <div class="child">
- <img src="assets/imgs/login.png" height="150" width="125" alt=" login image "class="center">
+    <form name="myForm">
+        <img src="assets/imgs/login.png" height="150" width="125" alt=" login image "class="center">
 
-  <label for="name" class="col-lg-2 control-label label" style="color: #FFFFFF; font-family: cursive;">Login</label>
-  <input id="login" type="text"  placeholder="login" [(ngModel)]="user.login">
-
-  <label for="name" class="col-lg-2 control-label label" style="color: #FFFFFF; font-family: cursive;">Password</label>
-  <input id="pwd" type="password"  placeholder="password" [(ngModel)]="user.password">
-
-  <button id="login" (tap)="login()">Login</button>
-  <label   style= "color:#303030; font-family: cursive;margin-top: 35%;margin-left: 20%" > Don't have an account? <a id="signup" class="signup" (tap)="signup()">Create one now!</a></label> 
+        <label for="name" class="col-lg-2 control-label label" style="color: #FFFFFF; font-family: cursive;">Login</label>
+        <input name="login" id="login" type="text"  placeholder="login" [(ngModel)]="user.login" required oninvalid="this.setCustomValidity('Fill login')">
+      
+        <label for="name" class="col-lg-2 control-label label" style="color: #FFFFFF; font-family: cursive;">Password</label>
+        <input name="pwd" id="pwd" type="password"  placeholder="password" [(ngModel)]="user.password" required oninvalid="this.setCustomValidity('Fill pwd')">
+        <button class="button" ng-disabled="myForm.$invalid" (tap)="login()" >Login</button>
+  <!--<button id="loginbtn" (tap)="login()">Login</button>-->
+    </form>
+    <label   style= "color:#303030; font-family: cursive;margin-top: 35%;margin-left: 5%" > Don't have an account? <a id="signup" class="signup" (tap)="signup()" style="color:#21d4fd;">Create one now!</a></label> 
 </div>
 
 </ion-content>

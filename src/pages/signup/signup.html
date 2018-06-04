@@ -10,26 +10,43 @@
     <ion-title >Login</ion-title>
   </ion-navbar>
 -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var elements = document.getElementsByTagName("INPUT");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].oninvalid = function(e) {
+            e.target.setCustomValidity("");
+            if (!e.target.validity.valid) {
+                e.target.setCustomValidity("This field cannot be left blank");
+            }
+        };
+        elements[i].oninput = function(e) {
+            e.target.setCustomValidity("");
+        };
+    }
+})
+</script>
 </ion-header>
 
 
 <ion-content padding  class="parent2 bdan">
 <div class="child2">
+    <form name="myForm">
  <img src="assets/imgs/login.png" height="150" width="125" alt=" login image "class="center2">
   <label for="name" class="col-lg-2 control-label label2" style="color: #FFFFFF; font-family: cursive;">Email</label>
-  <input id="email" type="text"  placeholder="Email"  [(ngModel)]="user.email">
+  <input name="email" id="email" type="text"  placeholder="Email"  [(ngModel)]="user.email" required pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})">
 
   <label for="name" class="col-lg-2 control-label label2" style="color: #FFFFFF; font-family: cursive;">Login</label>
-  <input id="login" type="text"  placeholder="Login"  [(ngModel)]="user.login">
+  <input name="login" id="login" type="text"  placeholder="Login"  [(ngModel)]="user.login"  required> 
 
   <label for="name" class="col-lg-2 control-label label2" style="color: #FFFFFF; font-family: cursive;">Password</label>
-  <input id="pwd" type="password"  placeholder="Password"  [(ngModel)]="user.password">
+  <input name="pwd" id="pwd" type="password"  placeholder="Password"  [(ngModel)]="user.password"  required > 
 
   <label for="name" class="col-lg-2 control-label label2" style="color: #FFFFFF; font-family: cursive;">Ethereum wallet address</label>
-  <input id="wallet" type="text"  placeholder="Ethereum wallet address"  [(ngModel)]="user.address">
+  <input name="wallet" id="wallet" type="text"  placeholder="Ethereum wallet address"  [(ngModel)]="user.address"  required> 
 
   <button id="signup" class="button2" (tap)="signUpfct()">Sign Up</button>
-   
+   </form>
 </div>
 
 </ion-content>

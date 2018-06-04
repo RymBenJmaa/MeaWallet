@@ -1,11 +1,16 @@
+page-home{
 body {
-    background-color:#F0F0F0;
+    
     padding: 2em;
     font-family: 'Raleway','Source Sans Pro', 'Arial';
 }
 .container {
+   
     width: 50%;
     margin: 0 auto;
+}
+.bg{
+    background:  linear-gradient(to bottom ,  #183152,#40A497);
 }
 label {
     display:block;
@@ -26,4 +31,22 @@ button {
     padding:1em;
     background-color:#fff;
     margin: 1em 0;
+}
+
+.image {
+    background: transparent;
+    border-radius: 70%;
+}
+.center {
+    margin-top:20px; 
+    margin-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 125px;
+}
+  .item{
+    background:rgba(15, 150, 150, 0);
+  }
 }

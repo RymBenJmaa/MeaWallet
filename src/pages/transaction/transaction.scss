@@ -1,0 +1,47 @@
+page-transaction {
+    .bg{
+        background:  linear-gradient(to top ,  #183152,#40A497);
+    }
+    h2{
+        color: white;
+    }
+    input{
+        font-family: cursive;
+      outline: 0;
+      background: #f2f2f2;
+      width: 100%;
+      border: 0;
+      margin: 0 0 15px;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    .button2{
+        font-family: cursive;
+        position: absolute;
+        margin-left: 30%;
+        margin-right: 20%;  
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 40px;
+        padding-left: 40px;
+         border-radius: 25px;
+        // background: #183152; 
+        color: #FFFFFF;
+        background: radial-gradient(  #183152 0%, #40A497 75%); 
+      }
+      .button2:hover, .button2:active, .button2:focus {
+        background: #40A497;
+      }
+      .image {
+        background: transparent;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 80px;
+       
+    }
+}

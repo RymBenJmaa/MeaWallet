@@ -1,7 +1,7 @@
 page-login{
 .content2 {
-    background:  linear-gradient(to bottom right,  #b721ff,#21d4fd);
-   //background: radial-gradient(   #21d4fd 0%,#b721ff 80%);
+    background:  linear-gradient(to bottom right,  #183152,#40A497);
+   //background: radial-gradient(   #21d4fd 0%,#b721ff 80%);  
 }
 
 
@@ -30,15 +30,15 @@ page-login{
  button {
   font-family: cursive;
   position: absolute;
-  margin-left: 25%;
-  margin-right: 20%;  
    border-radius: 25px;
-    
+    margin: 2em 0;
+    padding: 1em 4em;
   color: #FFFFFF;
+  margin-left: 25%;
  // background: radial-gradient(   #21d4fd 0%,#b721ff 50%);
- background:  linear-gradient(to left,#b721ff, #21d4fd);
+ background:  linear-gradient(to left,#183152, #40A497);
 
-  
+ 
 }
 ion-title{
     text-align: center;
@@ -68,10 +68,10 @@ img {
 }
 .signup:hover, .signup:active, .signup:focus {
     background: transparent;
-    color: #b721ff;
+    color: #183152;
   }
 button:hover, button:active, button:focus {
-  background: #21d4fd;
+  background: #183152;
 }
 
 label{
@@ -81,4 +81,5 @@ ion-footer {
     background: transparent;
     text-align: center;
 }
+
 }

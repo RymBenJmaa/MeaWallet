@@ -7,7 +7,7 @@ import  { HttpClient } from "@angular/common/http"
  
 @Injectable()
 export class UserService {
-address = "http://192.168.100.48:1616/";
+address = "http://192.168.100.44:1616/";
 
 constructor(private http: HttpClient){
 

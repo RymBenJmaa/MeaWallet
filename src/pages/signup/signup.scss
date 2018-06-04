@@ -1,6 +1,6 @@
 page-signup{
 .bdan {
-    background:  linear-gradient(to bottom right, #21d4fd, #b721ff);
+    background:  linear-gradient(to bottom left, #183152, #40A497);
    //background: radial-gradient(   #21d4fd 0%,#b721ff 80%);
 }
 
@@ -37,7 +37,7 @@ page-signup{
   padding-right: 40px;
   padding-left: 40px;
    border-radius: 25px;
-   background: #21d4fd; 
+   background: #183152; 
   color: #FFFFFF;
  // background: radial-gradient(   #21d4fd 0%,#b721ff 50%);
 // background:  linear-gradient(to left,#b721ff, #21d4fd);
@@ -66,7 +66,7 @@ img {
 }
 
 .button2:hover, .button2:active, .button2:focus {
-  background: #b721ff;
+  background: #40A497;
 }
 
 }
